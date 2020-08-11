@@ -1,0 +1,25 @@
+<html>
+    <script src="../js/script.js"></script>
+
+    <Title>
+        Who wants to see if they're a Millionnaire?
+    </Title>
+    <head>
+        Who wants to see if they're a Millionnaire ?
+    </head>
+    <body>
+        
+        <form id="netWorth" action="#">
+            <label for="portfolio"> Enter portfolio value in GBP</label>
+            <input id="portfolio" type="text">
+            <input type="submit" value="submit">
+        </form>
+        <p id="richList"></p>
+        <script >
+            document.getElementById("netWorth").onsubmit = function(){calculate()};
+                
+            
+        </script>
+        <p id="result"></p>
+    </body>
+</html>
