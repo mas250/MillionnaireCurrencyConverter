@@ -1,5 +1,6 @@
 <html>
     <script src="../js/script.js"></script>
+    <script src="../js/money.js"></script>
 
     <Title>
         Who wants to see if they're a Millionnaire?
@@ -17,9 +18,11 @@
         <p id="richList"></p>
         <script >
             document.getElementById("netWorth").onsubmit = function(){calculate()};
-                
+            console.log(JSON.stringify(fx.rates,0,2))
+            console.log(fx.convert(70))
             
         </script>
         <p id="result"></p>
+        
     </body>
 </html>
